@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a,
+img {
+	border: 0;
+}
+
+
+/* flexslider */
+
+.flexslider {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(images/loading.gif) 50% no-repeat;
+	width: 100%;
+	max-width: 1280px;
+}
+
+.slides {
+	position: relative;
+	z-index: 1;
+}
+
+.slides li {
+	height: 400px;
+}
+
+.flex-control-nav {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	background:black;
+	display:flex;
+	justify-content:space-between;
+}
+
+.flex-control-nav li {
+	display:block;
+	width:18.4%;
+	height:91px;
+	margin: 0 5px;
+	*display: inline;
+	zoom: 1;
+	position:relative;
+}
+.flex-control-nav li a{
+	display:inline-block;
+	width:96%;
+	margin-top:6px;
+	height:80px;
+	background-image:url(../images/xsjx_s_2.jpg);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:cover;
+	color:transparent;
+}
+.flex-control-nav li:hover a:after{
+				content: '';
+				position: absolute;
+				top:-13px;
+				left: 50%;
+				transform: translate(-50%);
+				display: block;
+				border-style: solid;
+				border-left-width: 10px;
+				border-bottom-width: 10px;
+				border-right-width: 10px;
+				border-color: transparent transparent black transparent; 
+				z-index: 100;
+			}
+.flex-control-nav li:nth-of-type(2) a{background-image:url(../images/xsjx_s_3.jpg);}
+.flex-control-nav li:nth-of-type(3) a{background-image:url(../images/xsjx_s_4.jpg);}
+.flex-control-nav li:nth-of-type(4) a{background-image:url(../images/xsjx_s_5.jpg);}
+.flex-control-nav li:nth-of-type(5) a{background-image:url(../images/xsjx_s_1.jpg);}
+/*.flex-control-nav a {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 40px;
+	overflow: hidden;
+	background: url(../images/dot.png) right 0 no-repeat;
+	cursor: pointer;
+}*/
+
+.flex-control-nav .flex-active {
+	background-position: 0 0;
+}
+
+.flex-direction-nav {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	top: 45%;
+}
+
+.flex-direction-nav li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	cursor: pointer;
+	position: absolute;
+}
+
+.flex-direction-nav li a.flex-prev {
+	left: 40px;
+	background: url(../images/prev.png) center center no-repeat;
+}
+
+.flex-direction-nav li a.flex-next {
+	right: 40px;
+	background: url(../images/next.png) center center no-repeat;
+}

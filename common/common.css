@@ -1,0 +1,188 @@
+header{
+	width:100%;
+	background:#333333;
+	position:fixed;
+	z-index:10000000000;
+	left:0;
+	top:0;
+}
+header section{
+	width:78.125%;
+	max-width:1000px;
+	margin:0 auto;
+	display:flex;
+	position: relative;
+}
+header section h1{
+	width:20.1%;
+	padding-bottom:9px;
+	padding-top:9px;
+	padding-right:9.6%;
+}
+header section nav{
+	width:71.8%;
+	margin-right:1.8%;
+}
+header section nav ul li{
+	width:12.813%;
+	float: left;
+}
+header section nav ul li:hover{background:#5c5c5c;}
+header section nav ul li a{
+	display:block;
+	font-size:14px;
+	height:80px;
+	line-height:80px;
+	text-align:center;
+	color:#ffffff;
+}
+header section h5 {
+	display:none;
+	font-size:30px;
+	color: white;
+	position: absolute;
+	left: 35%;
+	top:10px;
+}
+header section .menu{
+	width:120px;
+	height:40px;
+	border-radius:5px;
+	border:1px solid #666666;
+	position:absolute;
+	right:0;
+	bottom:10px;
+	cursor:pointer;
+	display:none;
+}
+header section .menu p{
+	font-size:14px;
+	color:white;
+	line-height:40px;
+	padding-left:16px;
+	float:left;
+}
+header section h6{
+	width:25px;
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+} 
+header section h6 span {
+	display:block;
+	width:25px;
+	height:3px;
+	margin-bottom:5px;
+	background:white;
+}
+ .show{
+	width:100%;
+	background:black;
+	border-top:4px solid #cccccc;
+	border-bottom:4px solid #cccccc;
+	display:none;
+}
+ .show li{
+	width:12.5%;
+	float:left;
+}
+.show li:hover a{background:#5c5c5c; color:#fa9634;}
+.show li a{
+	display:block;
+	font-size:15px;
+	height:50px;
+	line-height:50px;
+	color:white;
+	text-align:center;
+}
+footer{width:100%; background:#333333;}
+footer section{
+	width:78.125%;
+	max-width:1000px;
+	margin:0 auto;
+}
+footer section ul{display:flex; justify-content:space-between;}
+footer section ul li{
+	padding-top:48px;
+	padding-bottom:79px;
+}
+footer section ul li p{
+	font-size:12px;
+	line-height:30px;
+	color: #ffffff;
+}
+footer section ul li p span{
+	display:block;
+	text-indent:60px;
+}
+footer section ul li:nth-of-type(3) p a{
+	display:inline-block;
+	width:77px;
+	height:22px;
+}
+footer section ul li:nth-of-type(3) p a img{
+	display:block;
+	margin-top:7px;
+	margin-left:5px;
+}
+button.btn{
+	width:50px;
+	height:50px;
+	border-radius:5px;
+	background:orange;
+	position:fixed;
+	right:0;
+	bottom:30%;
+	display:none;
+	font-size:20px;
+	line-height:50px;
+	color: white;
+}
+@media only screen and (max-width:1055px) {
+	button.btn{display:block;}
+}
+/*断点1*/
+@media screen and (min-width:761px) and (max-width:1000px) {
+	header{position:relative; left:0; top:0;}
+	header section{width:90%;}
+	header section .menu{display:block;}
+	header section h1 img{display:block; width: 100%;}
+	header section nav{display:none;}
+	header section h5{display:block;}
+	footer section{width:90%;}
+}
+@media screen and (max-width:950px){
+	footer section{width:90%;}
+	footer section ul{width:100%; flex-wrap:wrap;}
+	footer section ul li{width:50%; padding-bottom:0;}
+} 
+@media screen and (max-width:734px){
+	header section h5{font-size:20px;}
+} 
+footer section{width:90%;}
+@media screen and (min-width:480px) and (max-width:760px) {
+	header{position:relative; left:0; top:0;}
+		header section{width:90%;}
+	header section .menu{display:block; bottom:3px; height:34px}
+	header section .menu p{line-height:34px;}
+	header section h1 img{display:block; width:100%;}
+	header section nav{display:none;}
+	header section h5{font-size:26px;display:block; left:30%; top:10px;}
+	 .show li{width:25%;}
+	footer section{width:90%;}
+	footer section ul{width:100%; flex-wrap:wrap;}
+	footer section ul li{width:50%;}
+}
+@media screen and (max-width:479px) {
+	header{position:relative; left:0; top:0;}
+	header section{width:90%;}
+	header section .menu{display:block; width:30px; height:35px;bottom:0;}
+	header section .menu h6{margin-left:3px; height:35px;}
+	header section .menu p{display:none;}
+	header section h1 img{display:block; width: 100%;}
+	header section nav{display:none;}
+    .show li{width:50%;}
+	footer section{width:90%;}
+	footer section ul{width:100%; flex-wrap:wrap;}
+	footer section ul li{width:50%;}
+}

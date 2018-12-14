@@ -1,0 +1,86 @@
+.survey{
+	width:78.125%;
+	max-width:1000px;
+	margin:120px auto 50px auto;
+}
+.survey ul{
+	width:21.7%;
+	padding-right:1.8%;
+	padding-top:7px;
+	border-right:1px solid #bababa;
+	float:left;
+}
+.survey ul li{
+	height:71px;
+	border-bottom:5px solid white;
+}
+.survey ul li:first-of-type {border-bottom:5px solid #fa9634;}
+.survey ul li:first-of-type span{background-image:url(../images/xygk_03.jpg);}
+.survey ul li:hover {border-bottom:5px solid #fa9634;}
+.survey ul li:hover span{background-image:url(../images/xygk_03.jpg);}
+.survey ul li:nth-of-type(2):hover span{background-image:url(../images/xygk_07.jpg);}
+
+.survey ul li span{
+	display:block;
+	height:40px;
+	width:40px;
+	margin-top:15px;
+	padding-left:20px;
+	float:left;
+	background-image:url(../images/xygk_02.jpg);
+	background-repeat:no-repeat;
+	background-position:12px 0;
+}
+.survey ul li:nth-of-type(2) span{background-image:url(../images/xygk_06.jpg);}
+.survey ul li a{
+	display:block;
+	height:71px;
+    margin-left:10px;
+	line-height:71px;
+	font-size:22px;
+	float:left;
+}
+.survey article{
+	width:70.6%;
+	padding-left:5.1%;
+	float:left;
+}
+.survey article p{
+	line-height:31px;
+	font-size:14px;
+	text-indent:28px;
+}
+.survey article img{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+@media screen and (max-width:1280px) {
+	.survey{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+		margin-top:50px;
+	}
+}
+@media screen and (max-width:770px) {
+	.survey{margin-top:50px;}
+	.survey ul{clear:both; display:flex; width:100%; border-right:0;}
+	.survey ul li{
+		width:50%;
+		height:107px;
+		padding-right:0;
+	}
+	.survey ul li:hover{border-bottom:0;}
+	.survey ul li:first-of-type{border-bottom:5px solid #fa9634;}
+	.survey ul li:hover:nth-of-type(2) span{background-image:url(../images/xygk_06.jpg) ;}
+	.survey ul li span{clear: both; margin-left:40%;}
+	.survey ul li a{clear: both;
+	height:48px;
+	line-height:48px;
+	font-size:20px;
+	padding-left:35%;
+	}
+	.survey article{clear:both; margin-top:20px; width:100%; padding:0;}
+}

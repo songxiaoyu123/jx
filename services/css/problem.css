@@ -1,0 +1,93 @@
+.problem{
+	width:78.125%;
+	max-width:1000px;
+	margin:120px auto 50px auto;
+}
+.problem ul{
+	width:21.7%;
+	padding-right:1.8%;
+	padding-top:7px;
+	border-right:1px solid #bababa;
+	float:left;
+}
+.problem ul li{
+	height:71px;
+	border-bottom:5px solid white;
+	background-image:url(../images/service_03.jpg);
+	background-repeat:no-repeat;
+	background-position:20px 18px;
+}
+.problem ul li:nth-of-type(2){
+	border-bottom:5px solid #fa9634;
+	background-image:url(../images/service_06.jpg);
+}
+.problem ul li:nth-of-type(1){background-image:url(../images/service_03.jpg);}
+.problem ul li:nth-of-type(3){background-image:url(../images/service_08.jpg);}
+.problem ul li:nth-of-type(4){background-image:url(../images/service_10.jpg);}
+.problem ul li:hover{border-bottom:5px solid #fa9634;
+background-image:url(../images/service_04.jpg);}
+.problem ul li:nth-of-type(2):hover{background-image:url(../images/service_06.jpg);}
+.problem ul li:nth-of-type(3):hover{background-image:url(../images/service_09.jpg);}
+.problem ul li:nth-of-type(4):hover{background-image:url(../images/service_11.jpg);}
+.problem ul li a{
+	display:block;
+	height:71px;
+	padding-left:67px;
+	line-height:71px;
+	font-size:20px;
+}
+.problem article{
+	width:70.6%;
+	padding-left:5.1%;
+	float:left;
+}
+.problem article h3{
+	height:56px;
+	line-height:56px;
+	font-size:20px;
+	color:#fa9634;
+}
+.problem article  span{
+	display:inline-block;
+	line-height:28px;
+	font-size:16px;
+	color:black;
+	font-weight:normal;
+}
+.problem article p{
+	line-height:27px;
+	font-size:18px;
+	font-weight:bold;
+}
+/*断点1*/
+@media screen and (max-width:1280px) {
+	.problem{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+}
+@media screen and (max-width:770px) {
+	.problem{margin-top:50px;}
+	.problem ul{ clear:both; width:100%; border-right:0;}
+	.problem ul li{
+		width:25%;
+		height:107px;
+		padding-right:0;
+		float: left;
+		background-position:50% 10px;
+	}
+	.problem ul li a{
+		height:40px;
+		line-height:40px;
+		margin-top:57px;
+		padding-left:20%;
+		font-size:18px;
+	}
+	.problem article{clear:both; margin-top:20px; width:100%; padding:0;}
+}
+@media screen and (max-width:480px) {
+	.problem ul li a{font-size:16px;}
+}
+

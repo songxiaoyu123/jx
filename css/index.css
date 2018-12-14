@@ -1,0 +1,474 @@
+.m {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.m img {
+	width: 100%;
+}
+
+.services,.course,.campus,.works,.star,.unit {
+	width: 78.125%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.services h2,.course h2,.campus h2,.works h2,.star h2,.unit h2 {
+	height:78px;
+	line-height:78px;
+	margin-bottom: 14px;
+	font-size: 34px;
+	font-weight: bold;
+	padding-top:38px;
+}
+
+.services ul {
+	width: 100%;
+	display: flex;
+}
+
+.services ul li {
+	width: 25%;
+	box-sizing: border-box;
+	padding-bottom: 25px;
+	transition: .3s;
+	cursor: pointer;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+.services ul li>span {
+	display: block;
+	width: 34%;
+	height: 66px;
+	margin-right: 7.2%;
+	float: left;
+	background-image: url(../images/service_1_1.jpg);
+	background-repeat: no-repeat;
+	background-position: 8px 5px;
+}
+
+.services ul li:nth-of-type(2)>span {
+	background-image: url(../images/service_2_1.jpg);
+}
+
+.services ul li:nth-of-type(3)>span {
+	background-image: url(../images/service_3_1.jpg);
+}
+
+.services ul li:nth-of-type(4)>span {
+	background-image: url(../images/service_4_1.jpg);
+}
+
+.services ul li:hover>span {
+	background-image: url(../images/service_1_2.jpg);
+}
+
+.services ul li:hover {
+	border-bottom: 5px solid #fa9632;
+}
+
+.services ul li:nth-of-type(2):hover>span {
+	background-image: url(../images/service_2_2.jpg);
+}
+
+.services ul li:nth-of-type(3):hover>span {
+	background-image: url(../images/service_3_2.jpg);
+}
+
+.services ul li:nth-of-type(4):hover>span {
+	background-image: url(../images/service_4_2.jpg);
+}
+
+.services ul li .right {
+	width: 58.4%;
+	float: left;
+}
+
+.services ul li h4 {
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.services ul li p {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #888888;
+}
+
+.course ul li {
+	width: 33.3%;
+	height: 198px;
+	border: 1px solid #dedede;
+	float: left;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	cursor: pointer;
+}
+
+.course ul li span {
+	display: block;
+	padding-top: 18px;
+}
+
+.course ul li>p {
+	font-size: 23px;
+	height: 58px;
+	line-height: 58px;
+	color: black;
+}
+
+.course ul li:hover .hidden {
+	display: block;
+}
+
+.course ul li .hidden {
+	width: 100%;
+	max-width: 330px;
+	height: 198px;
+	background: #90c166;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.course ul li:nth-of-type(2n) .hidden {
+	background: #fa9634;
+}
+
+.course ul li .hidden h3 {
+	font-size: 23px;
+	height: 48px;
+	padding-top: 23px;
+	line-height: 23px;
+	color: white;
+	padding-left: 22px;
+}
+
+.course ul li .hidden p {
+	line-height: 23px;
+	font-size: 12px;
+	color: white;
+	padding-left: 22px;
+}
+
+.campus h2 {
+	position: relative;
+}
+
+.campus h2 a {
+	display: block;
+	font-size: 14px;
+	color: #fda63f;
+	position: absolute;
+	right: 20px;
+	top: 13px;
+}
+
+.campus ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.campus ul li {
+	width: 30%;
+}
+
+.campus ul li span{
+	display: block;
+	width: 100%;
+	max-width:295px;
+	height:100%;
+	max-height:145px;
+	overflow:hidden;
+}
+.campus ul li span img{
+	width:295px;
+	height:145px;
+	transition:.3s;
+}
+.campus ul li span img:hover{
+	transform: scale(1.2);
+}
+.campus ul li h4 {
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+	color: black;
+	margin-top: 19px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.campus ul li h4:hover {
+	color: #fda63f;
+}
+
+.campus ul li p {
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	color: #888888;
+	margin-bottom: 10px;
+}
+
+.campus .btn,.works .bottom,.star .fastener,.unit .hide2  {
+	width: 113px;
+	height: 35px;
+	background: #fda63f;
+	color: white;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: 37%;
+	display: none;
+	cursor: pointer;
+}
+
+.works ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.works ul li {
+	width:20%;
+	position:relative;
+}
+.works ul li h6{
+	width:100%;
+	height:100%;
+	max-width:196px;
+	max-height:196px;
+	overflow:hidden;
+}
+.works ul li h6 img{
+	width:100%;
+	transition:.3s;
+}
+.works ul li:hover h6 img{transform: scale(1.2);}
+.works ul li:hover .hidden{display:block;}
+.works ul li .hidden {
+	width: 100%;
+	max-width: 202px;
+	height:100%;
+	max-height:200px;
+	background:rgba(235,121,20,.9);
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+.works ul li .hidden h4{
+	height:48px;
+	line-height:48px;
+	font-size:24px;
+	color:white;
+	margin-top:33px;
+	margin-bottom:6px;
+	text-align: center;
+	cursor: pointer;
+}
+.works ul li .hidden p{
+	height:51px;
+	line-height:51px;
+	font-size:18px;
+	color:white;
+	text-align: center;
+}
+.star ul,.unit ul
+{display:flex; justify-content:space-between;flex-wrap:wrap;}
+.star ul li{
+	width:24%;
+	margin-bottom:10px;
+	position:relative;
+}
+.star ul li:hover .hidden{display:block;}
+.star ul li .hidden{
+	width:100%;
+	max-width:240px;
+	max-height:200px;
+	height:100%;
+	background:#90c166;
+	position:absolute;
+	left:0;
+	top:0;
+	cursor:pointer;
+	padding-top:16px;
+	box-sizing:border-box;
+	display:none;
+}
+.star ul li .hidden p{
+	height:53px;
+	font-size:16px;
+	line-height:53px;
+	color:white;
+	text-align:center;
+}
+.star ul li .hidden p:nth-of-type(2){font-size:18px;}
+.star ul li .hidden h4{
+	height:65px;
+	font-size:24px;
+	line-height:65px;
+	color:white;
+	text-align:center;
+}
+.unit ul li{
+	width:15.66666667%;
+	margin-bottom: 10px;
+}
+/*总断点*/
+
+@media screen and (min-width:761px) and (max-width:1280px) {
+	.services,.course,.campus,.works,.star,.unit {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width:480px) and (max-width:760px) {
+	.services,.course,.campus,.works,.star,.unit{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width:479px) {
+    .services,.course,.campus,.works,.star,.unit {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+}
+
+
+/*断点1   学院断点*/
+
+@media only screen and (max-width:1055px) {
+	.services ul li:nth-of-type(4) p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+@media only screen and (max-width:957px) {
+	.services {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.services ul li:nth-of-type(3) p,.services ul li:nth-of-type(2) p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.works ul li:hover h6 img{transform:none;}
+	.campus ul li span img:hover{
+	transform: none;
+}
+}
+/*课程设置*/
+@media only screen and (max-width:1000px) {
+	.course ul li:hover .hidden,.works ul li:hover .hidden
+	,.star ul li:hover .hidden {
+		display: none;
+	}
+	.services h2,.course h2,.campus h2,.works h2,.star h2,.unit h2 {
+		font-size:30px;
+		height:65px;
+		line-height:65px;
+	}
+}
+
+@media only screen and (max-width:760px) {
+	.services ul li>span {
+		margin-left: 30.2%;
+		width: 100%;
+	}
+	.services ul li:nth-of-type(2)>span {
+		margin-left: 36.2%;
+	}
+	.services ul li .right {
+		clear: both;
+		width: 100%;
+	}
+	.services ul li .right span {
+		display: none;
+	}
+	.services ul li .right p {
+		display: none;
+	}
+	.services ul li .right h4 {
+		text-align: center;
+		width: 100%;
+	}
+	/*课程设置*/
+	.course ul li {
+		border: 0;
+	}
+	.course ul li>p {
+		font-size: 17px;
+	}
+	/*校园风采*/
+	.campus ul,.works ul,.star ul,.unit ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	.campus ul li {
+		width: 46%;
+	}
+	.campus .btn,.works .bottom,.star .fastener,.unit .hide2 {
+		display: block;
+	}
+	.campus ul li.over,.works ul li.hide,.star ul li.no,.unit ul li.display{
+		display: none;
+	}
+	.star ul,.unit ul {width:100%;}
+	.works ul li,.unit ul li{width:32.3%; margin-bottom:10px; background-size:cover ;}
+	.works ul li h6 img,.unit ul li h6 img{width:100%;}
+	.star ul li{width:32.3%; margin-bottom:10px;}
+	.unit .hide2{margin-bottom:30px;}
+	
+}
+
+
+/*学院设置   断点*/
+
+@media only screen and (max-width:463px) {
+	.course ul li {
+		width: 50%;
+	}
+	/*学员服务 断点*/
+	.services ul li>span {
+		margin-left: 10.2%;
+	}
+	.services ul li:nth-of-type(2)>span {
+		margin-left: 24.2%;
+	}
+}
+
+
+/*校园风采*/
+
+@media only screen and (max-width:530px) {
+	.campus ul li p {
+		display: none;
+	}
+}

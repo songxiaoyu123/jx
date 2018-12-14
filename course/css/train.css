@@ -1,0 +1,93 @@
+.train{
+	width:78.125%;
+	max-width:1000px;
+	margin:120px auto 50px auto;
+}
+.train ul{
+	width:21.7%;
+	padding-right:1.8%;
+	padding-top:7px;
+	border-right:1px solid #bababa;
+	float:left;
+}
+.train ul li{
+	height:71px;
+	border-bottom:5px solid white;
+	background-image:url(../images/left_link_02.jpg);
+	background-repeat:no-repeat;
+	background-position:0 18px;
+}
+.train ul li.color{
+	border-bottom:5px solid #fa9634;
+}
+.train ul li:hover{border-bottom:5px solid #fa9634;
+background-image:url(../images/left_link_03.jpg);}
+.train ul li:nth-of-type(2):hover{background-image:url(../images/left_link_07.jpg);}
+.train ul li:nth-of-type(3):hover{background-image:url(../images/left_link_09.jpg);}
+.train ul li:nth-of-type(4):hover{background-image:url(../images/left_link_11.jpg);}
+.train ul li:nth-of-type(5):hover{background-image:url(../images/left_link_13.jpg);}
+.train ul li:nth-of-type(6):hover{background-image:url(../images/left_link_15.jpg);}
+.train ul li:nth-of-type(7):hover{background-image:url(../images/left_link_17.jpg);}
+.train ul li:nth-of-type(8):hover{background-image:url(../images/left_link_19.jpg);}
+.train ul li a{
+	display:block;
+	height:71px;
+	padding-left:47px;
+	line-height:71px;
+	font-size:20px;
+}
+.train article{
+	width:70.6%;
+	padding-left:5.1%;
+	float:left;
+}
+.train article h3{
+	height:56px;
+	line-height:56px;
+	font-size:20px;
+	color:#fa9634;
+}
+.train article p{
+	line-height:27px;
+	font-size:16px;
+}
+.train article img{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+/*断点1*/
+@media screen and (max-width:1280px) {
+	.train{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+}
+@media screen and (max-width:770px) {
+	.train{margin-top:50px;}
+	.train ul{ clear:both; width:100%; border-right:0;}
+	.train ul li{
+		width:33.3%;
+		height:107px;
+		padding-right:0;
+		float: left;
+		background-position:62px 10px;
+	}
+	.train ul li a{
+		height:40px;
+		line-height:40px;
+		margin-top:57px;
+		padding-left:22px;
+		font-size:18px;
+	}
+	.train article{clear:both; margin-top:20px; width:100%; padding:0;}
+}
+@media only screen and (max-width:540px ) {
+	.train ul li a span{
+		display:none;
+	}
+	.train ul li a{font-size:16px; text-align:center;}
+	.train ul li {background-position:55% 10px;}
+}
+

@@ -1,0 +1,78 @@
+body{background:#f2f2f2;}
+.teachers{
+	width:78.125%;
+	max-width:1000px;
+	margin:0 auto;
+	padding-top:120px;
+}
+.teachers h2{
+	height:57px;
+	font-size:30px;
+	line-height:57px;
+	color:#6b7381;
+	text-align:center;
+}
+.teachers h6{
+	height:50px;
+	font-size:24px;
+	line-height:50px;
+	color:#888888;
+	text-align:center;
+	margin-bottom:50px;
+}
+.teachers .grid li{
+	width:25%;
+	padding-right:20px;
+	box-sizing:border-box;
+	float:left;
+	height:801px;
+}
+.teachers .grid li:nth-of-type(4n){
+	padding-right:0;
+}
+.teachers .grid li .intr img{display:none;}
+.teachers .grid li .intr article {
+	line-height: 24px;
+	font-size:12px;
+	text-indent:24px;
+	color:#888888;
+	margin-top:17px;
+}
+.teachers .grid li .intr article h3{
+	font-size:18px;
+	height:25px;
+	line-height:25px;
+	color:#888888;
+	font-weight:bold;
+}
+@media screen and (max-width:1280px) {
+	.teachers{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+		margin-top:50px;
+	}
+}
+@media screen and (max-width:1000px) {
+	.teachers{
+		padding-top:0;
+	}
+}
+@media screen and (max-width:790px) {
+	.teachers .grid li{
+		width:33.3%;
+		max-height:204px;
+	}
+	.teachers .grid li .intr article{display:none;}
+	.teachers .grid li:nth-of-type(4n){
+		padding-right:20px;
+	}
+	.teacher ul li:nth-of-type(3n){padding-right:0;})
+}
+@media screen and (max-width:480px) {
+	.teachers .grid li{
+		width:50%;
+		max-height:317px;
+	}
+}
